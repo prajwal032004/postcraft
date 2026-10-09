@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap, prefersReducedMotion } from "@/lib/gsap";
 import { lockScroll, unlockScroll } from "@/lib/smoothScroll";
+import { SITE } from "@/lib/site";
 
 const SESSION_KEY = "postcraft:seen-intro";
 const COLUMNS = 6;
@@ -97,9 +98,9 @@ export default function Preloader({ onDone }: { onDone: () => void }) {
       </div>
       <div className="pre-inner">
         <p className="pre-word">
-          {"postcraft".split("").map((c, i) => (
+          {SITE.wordmark.split("").map((c, i) => (
             <span className="pre-mark" key={i}>
-              {c}
+              {c === " " ? " " : c}
             </span>
           ))}
         </p>

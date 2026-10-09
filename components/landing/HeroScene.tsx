@@ -42,7 +42,7 @@ function makeLetterTexture(maxAniso: number, aspect: number): THREE.CanvasTextur
   const x = 590;
   g.fillStyle = "#797776";
   g.font = "500 26px monospace";
-  g.fillText("POSTCRAFT  ·  ISSUE 01", x, 130);
+  g.fillText("POSTCRAFT PLUM  ·  ISSUE 01", x, 130);
 
   g.fillStyle = "#242424";
   g.font = "400 92px Georgia, serif";

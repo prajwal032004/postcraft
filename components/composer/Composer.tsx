@@ -5,6 +5,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import CodeEditor from "./CodeEditor";
 import TemplateThumb from "@/components/TemplateThumb";
+import { SITE } from "@/lib/site";
 import {
   FONT_OPTIONS,
   STARTER_HTML,
@@ -388,7 +389,7 @@ export default function Composer() {
       <header className="cmp-top">
         <Link href="/" className="logo" aria-label="Back to home">
           <span className="logo-mark" />
-          <span className="cmp-logo-text">postcraft</span>
+          <span className="cmp-logo-text">{SITE.wordmark}</span>
         </Link>
 
         <div className="seg" role="tablist" aria-label="Compose mode">
@@ -829,7 +830,7 @@ export default function Composer() {
               )}
 
               <p className="cmp-by">
-                Postcraft · Made by <strong>Prajwal A Bhandagi</strong>
+                {SITE.name} · Made by <strong>{SITE.author}</strong>
               </p>
             </div>
           </div>

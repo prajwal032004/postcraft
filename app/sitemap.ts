@@ -1,18 +1,12 @@
 import type { MetadataRoute } from "next";
-import { TEMPLATES } from "@/lib/templates";
+import { absoluteUrl } from "@/lib/site";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://postcraft.vercel.app";
-
+// Only canonical pages. The ?template= links are the same document with a
+// query string, so listing them would just advertise duplicates.
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   return [
-    { url: `${siteUrl}/`, lastModified: now, changeFrequency: "monthly", priority: 1 },
-    { url: `${siteUrl}/compose`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    ...TEMPLATES.map((t) => ({
-      url: `${siteUrl}/compose?template=${t.id}`,
-      lastModified: now,
-      changeFrequency: "yearly" as const,
-      priority: 0.5,
-    })),
+    { url: absoluteUrl("/"), lastModified: now, changeFrequency: "monthly", priority: 1 },
+    { url: absoluteUrl("/compose"), lastModified: now, changeFrequency: "monthly", priority: 0.9 },
   ];
 }

@@ -1,5 +1,5 @@
 {
-  "name": "postcraft",
+  "name": "postcraft-plum",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -24,5 +24,6 @@
     "@types/react-dom": "^19.3.0",
     "@types/three": "^0.186.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "description": "Compose beautifully designed HTML email and send it from your own inbox."
 }

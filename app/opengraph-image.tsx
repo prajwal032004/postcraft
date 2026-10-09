@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Postcraft — compose email that reads like it was typeset";
+export const alt = "Postcraft Plum — compose email that reads like it was typeset";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -57,7 +57,7 @@ export default function OpengraphImage() {
           >
             <div style={{ width: 12, height: 12, borderRadius: 999, background: "#f6f3f1" }} />
           </div>
-          <div style={{ fontSize: 34, color: "#242424", letterSpacing: -1 }}>postcraft</div>
+          <div style={{ fontSize: 34, color: "#242424", letterSpacing: -1 }}>postcraft plum</div>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>

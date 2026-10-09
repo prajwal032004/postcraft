@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { gsap } from "@/lib/gsap";
+import { SITE } from "@/lib/site";
 import { lockScroll, scrollToTarget, unlockScroll } from "@/lib/smoothScroll";
 
 const LINKS = [
@@ -62,9 +63,9 @@ export default function Nav({ scrolled, progress }: { scrolled: boolean; progres
     <>
       <header className={`nav${scrolled ? " scrolled" : ""}${open ? " nav-open" : ""}`}>
         <div className="container">
-          <Link href="/" className="logo" aria-label="Postcraft home" data-cursor>
+          <Link href="/" className="logo" aria-label={`${SITE.name} home`} data-cursor>
             <span className="logo-mark" />
-            postcraft
+            {SITE.wordmark}
           </Link>
 
           <nav className="nav-links" aria-label="Primary">
@@ -80,7 +81,9 @@ export default function Nav({ scrolled, progress }: { scrolled: boolean; progres
               HTML editor
             </Link>
             <Link href="/compose" className="btn btn-blue btn-sm" data-magnetic>
-              Start composing <span className="arrow">▸</span>
+              <span className="cta-long">Start composing</span>
+              <span className="cta-short">Compose</span>
+              <span className="arrow">▸</span>
             </Link>
             <button
               className={`burger${open ? " on" : ""}`}

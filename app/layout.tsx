@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Instrument_Serif, JetBrains_Mono } from "next/font/google";
+import { SITE } from "@/lib/site";
 import "./globals.css";
 
 const serif = Instrument_Serif({
@@ -17,42 +18,59 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://postcraft.vercel.app";
-const description =
-  "Compose and send beautifully designed HTML email from your own inbox. 14 ready templates, a live HTML editor, and SMTP sending with your app password.";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE.url),
   title: {
-    default: "Postcraft — Compose beautiful email",
-    template: "%s — Postcraft",
+    default: `${SITE.name} — ${SITE.tagline} and send it from your own inbox`,
+    template: `%s — ${SITE.name}`,
   },
-  description,
-  applicationName: "Postcraft",
+  description: SITE.description,
+  applicationName: SITE.name,
+  generator: "Next.js",
+  category: "productivity",
   keywords: [
-    "html email",
-    "email templates",
-    "email composer",
-    "smtp",
+    "postcraft plum",
+    "html email composer",
+    "free email template builder",
+    "send email from gmail smtp",
+    "html email templates",
+    "email preview tool",
     "gmail app password",
+    "outlook smtp sender",
     "newsletter template",
-    "transactional email",
+    "transactional email template",
+    "responsive email html",
   ],
-  authors: [{ name: "Postcraft" }],
+  authors: [{ name: SITE.author }],
+  creator: SITE.author,
+  publisher: SITE.author,
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: "/",
-    siteName: "Postcraft",
-    title: "Postcraft — Compose beautiful email",
-    description,
+    siteName: SITE.name,
+    locale: SITE.locale,
+    title: `${SITE.name} — ${SITE.tagline}`,
+    description: SITE.shortDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Postcraft — Compose beautiful email",
-    description,
+    title: `${SITE.name} — ${SITE.tagline}`,
+    description: SITE.shortDescription,
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  referrer: "origin-when-cross-origin",
+  formatDetection: { telephone: false, address: false, email: false },
 };
 
 export const viewport: Viewport = {
@@ -66,6 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${serif.variable} ${mono.variable}`}>
       <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         {/* Without JS nothing animates, so the hero copy must not stay hidden. */}
         <noscript>
           <style>{`[data-intro],.statement .w{opacity:1!important;transform:none!important}.preloader{display:none!important}.faq-a{height:auto!important}`}</style>

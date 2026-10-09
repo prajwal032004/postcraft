@@ -6,6 +6,8 @@ import dynamic from "next/dynamic";
 import { gsap, ScrollTrigger, SplitText, prefersReducedMotion } from "@/lib/gsap";
 import { initSmoothScroll } from "@/lib/smoothScroll";
 import { TEMPLATES } from "@/lib/templates";
+import { FAQ } from "@/lib/faq";
+import { SITE } from "@/lib/site";
 import Nav from "./Nav";
 import Preloader from "./Preloader";
 import Cursor from "./Cursor";
@@ -56,63 +58,6 @@ const FEATURES: [string, string, string][] = [
     "App passwords are used for one SMTP session and never stored on the server. Remembering them locally is opt-in.",
   ],
   ["⎙", "Attachments & BCC", "Attach files up to 3 MB and send to as many as 50 recipients across To, CC and BCC."],
-];
-
-const FAQ = [
-  {
-    q: "What is an app password, and where do I get one?",
-    a: (
-      <>
-        An app password is a 16-character code your email provider issues so a third-party app can send mail without your real
-        password. For Gmail:
-        <ol>
-          <li>Turn on 2-Step Verification in your Google Account.</li>
-          <li>Open myaccount.google.com/apppasswords.</li>
-          <li>Name it “Postcraft”, create it, and paste the code into the composer.</li>
-        </ol>
-      </>
-    ),
-  },
-  {
-    q: "Is my password stored anywhere?",
-    a: (
-      <>
-        No. Your credentials go straight from your browser to a serverless function that opens one SMTP connection, sends your
-        message and closes. Nothing is logged or saved on the server. You can optionally remember them on your own device only.
-      </>
-    ),
-  },
-  {
-    q: "Will my custom CSS survive Gmail and Outlook?",
-    a: (
-      <>
-        The built-in templates use table layouts and inline styles, the same techniques professional email teams use. In the HTML
-        editor you can write any CSS, but email clients strip some features, so inline styles and tables are the safest bet.
-      </>
-    ),
-  },
-  {
-    q: "Can I send to several people at once?",
-    a: <>Yes. Add up to 50 addresses across To, CC and BCC. Use BCC when recipients shouldn’t see each other.</>,
-  },
-  {
-    q: "Which providers work?",
-    a: (
-      <>
-        Gmail, Yahoo, Zoho, iCloud and Fastmail have presets. Any other service that offers SMTP works through the custom host
-        and port fields.
-      </>
-    ),
-  },
-  {
-    q: "Does Postcraft track opens or clicks?",
-    a: (
-      <>
-        No. There are no tracking pixels, no link rewriting and no analytics inside the email. What you compose is exactly what
-        your recipient receives.
-      </>
-    ),
-  },
 ];
 
 const STATEMENT =
@@ -548,8 +493,8 @@ export default function Landing() {
                 </h2>
               </div>
               <p className="lead" data-reveal>
-                Your content goes in on the left, Postcraft renders bulletproof HTML in the middle, and your own mail account
-                delivers it on the right.
+                Your content goes in on the left, {SITE.name} renders bulletproof HTML in the middle, and your own mail
+                account delivers it on the right.
               </p>
             </div>
 
@@ -581,7 +526,7 @@ export default function Landing() {
                 <div className="pipeline-hub">
                   <div>
                     <span className="logo">
-                      <span className="logo-mark" /> postcraft
+                      <span className="logo-mark" /> {SITE.wordmark}
                     </span>
                     <small>Render · Inline · Send</small>
                   </div>
@@ -754,7 +699,18 @@ export default function Landing() {
                     </button>
                   </h3>
                   <div className="faq-a" id={`faq-a-${i}`} role="region" aria-labelledby={`faq-q-${i}`}>
-                    <div className="faq-a-inner">{f.a}</div>
+                    <div className="faq-a-inner">
+                      {f.a.map((para) => (
+                        <p key={para}>{para}</p>
+                      ))}
+                      {f.steps && (
+                        <ol>
+                          {f.steps.map((step) => (
+                            <li key={step}>{step}</li>
+                          ))}
+                        </ol>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -793,7 +749,7 @@ export default function Landing() {
           <div className="footer-top">
             <div className="footer-brand">
               <span className="logo">
-                <span className="logo-mark" /> postcraft
+                <span className="logo-mark" /> {SITE.wordmark}
               </span>
               <p className="muted">A quiet tool for composing beautiful email and sending it from your own account.</p>
             </div>
@@ -813,14 +769,14 @@ export default function Landing() {
             </div>
           </div>
           <p className="footer-word" aria-hidden="true">
-            {"postcraft".split("").map((c, i) => (
-              <span key={i} className="ch">
-                {c}
+            {SITE.wordmark.split("").map((c, i) => (
+              <span key={i} className={c === " " ? "ch ch-space" : "ch"}>
+                {c === " " ? " " : c}
               </span>
             ))}
           </p>
           <div className="footer-bottom">
-            <small>© {new Date().getFullYear()} Postcraft. All rights reserved.</small>
+            <small>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</small>
             <small className="footer-by">
               Made by <strong>Prajwal A Bhandagi</strong>
             </small>
