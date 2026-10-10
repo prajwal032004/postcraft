@@ -23,7 +23,7 @@ function jsonLd() {
         "@id": absoluteUrl("/#website"),
         url: absoluteUrl("/"),
         name: SITE.name,
-        description: SITE.shortDescription,
+        description: SITE.socialDescription,
         inLanguage: "en",
         publisher: { "@id": absoluteUrl("/#person") },
       },

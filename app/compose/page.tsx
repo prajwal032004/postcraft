@@ -5,15 +5,17 @@ import { TEMPLATES } from "@/lib/templates";
 import "./composer.css";
 
 export const metadata: Metadata = {
-  title: "Email composer — write, preview and send HTML email",
-  description: `Fill one of ${TEMPLATES.length} ready templates or write your own HTML and CSS, preview it on desktop, mobile and plain text, then send it from your own Gmail, Outlook or SMTP account. Free, no sign-up.`,
+  // 43 chars with the brand suffix the root template appends.
+  title: "HTML Email Editor & Sender",
+  description:
+    "Fill a ready-made template or write raw HTML and CSS. Preview on desktop, mobile and plain text, then send it from your own Gmail, Outlook or SMTP account.",
   alternates: { canonical: "/compose" },
   openGraph: {
     type: "website",
     url: "/compose",
     siteName: SITE.name,
-    title: `Email composer — ${SITE.name}`,
-    description: `Write, preview and send HTML email from your own inbox. ${TEMPLATES.length} templates and a live HTML editor.`,
+    title: `HTML Email Editor & Sender — ${SITE.name}`,
+    description: `Write, preview and send HTML email from your own inbox. ${TEMPLATES.length} templates and a live HTML editor, free.`,
   },
 };
 

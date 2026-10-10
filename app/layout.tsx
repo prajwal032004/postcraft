@@ -21,42 +21,37 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — ${SITE.tagline} and send it from your own inbox`,
+    default: SITE.title,
     template: `%s — ${SITE.name}`,
   },
-  description: SITE.description,
+  description: SITE.metaDescription,
   applicationName: SITE.name,
   generator: "Next.js",
   category: "productivity",
-  keywords: [
-    "postcraft plum",
-    "html email composer",
-    "free email template builder",
-    "send email from gmail smtp",
-    "html email templates",
-    "email preview tool",
-    "gmail app password",
-    "outlook smtp sender",
-    "newsletter template",
-    "transactional email template",
-    "responsive email html",
-  ],
+  keywords: [...SITE.keywords],
   authors: [{ name: SITE.author }],
   creator: SITE.author,
   publisher: SITE.author,
   alternates: { canonical: "/" },
+
+  // Ownership proofs for Google Search Console and Bing Webmaster Tools.
+  verification: {
+    google: SITE.verification.google,
+    other: { "msvalidate.01": SITE.verification.bing },
+  },
+
   openGraph: {
     type: "website",
     url: "/",
     siteName: SITE.name,
     locale: SITE.locale,
-    title: `${SITE.name} — ${SITE.tagline}`,
-    description: SITE.shortDescription,
+    title: SITE.title,
+    description: SITE.socialDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — ${SITE.tagline}`,
-    description: SITE.shortDescription,
+    title: SITE.title,
+    description: SITE.socialDescription,
   },
   robots: {
     index: true,
@@ -68,6 +63,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
       "max-video-preview": -1,
     },
+  },
+  appleWebApp: {
+    capable: true,
+    title: SITE.name,
+    statusBarStyle: "default",
   },
   referrer: "origin-when-cross-origin",
   formatDetection: { telephone: false, address: false, email: false },
