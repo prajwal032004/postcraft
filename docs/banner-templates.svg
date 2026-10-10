@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="416" viewBox="0 0 1280 416" role="img" aria-label="The 14 email templates included with Postcraft Plum">
+<defs><clipPath id="c"><rect width="1280" height="416" rx="28"/></clipPath><linearGradient id="g0" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#cfdaf5"/><stop offset="100%" stop-color="#2b59d1"/></linearGradient><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ecda98"/><stop offset="100%" stop-color="#242424"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#a0b5eb"/><stop offset="100%" stop-color="#a7fccd"/></linearGradient><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#242424"/><stop offset="100%" stop-color="#ecda98"/></linearGradient><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#a7fccd"/><stop offset="100%" stop-color="#242424"/></linearGradient><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f6f3f1"/><stop offset="100%" stop-color="#4e4d4d"/></linearGradient><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff9473"/><stop offset="100%" stop-color="#f37a0a"/></linearGradient><linearGradient id="g7" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#a7fccd"/><stop offset="100%" stop-color="#2b59d1"/></linearGradient><linearGradient id="g8" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#cecac8"/><stop offset="100%" stop-color="#242424"/></linearGradient><linearGradient id="g9" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#cfdaf5"/><stop offset="100%" stop-color="#242424"/></linearGradient><linearGradient id="g10" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff9473"/><stop offset="100%" stop-color="#a7fccd"/></linearGradient><linearGradient id="g11" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f6f3f1"/><stop offset="100%" stop-color="#2b59d1"/></linearGradient><linearGradient id="g12" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fffdfa"/><stop offset="100%" stop-color="#4e4d4d"/></linearGradient><linearGradient id="g13" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2b59d1"/><stop offset="100%" stop-color="#cfdaf5"/></linearGradient></defs>
+<g clip-path="url(#c)"><rect width="1280" height="416" fill="#f6f3f1"/>
+<text x="73" y="62" font-family="Georgia,'Times New Roman',serif" font-size="34" fill="#242424" letter-spacing="-1">14 templates, <tspan font-style="italic">set with care.</tspan></text>
+<text x="73" y="92" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#797776">Table-based, inline-styled and tested in Gmail, Outlook and Apple Mail</text>
+<rect x="73" y="132" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="83" y="142" width="130" height="36" rx="8" fill="url(#g0)"/>
+<rect x="83" y="188" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="83" y="199" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="83" y="210" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="73" y="245" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Warm Welcome</text>
+<text x="73" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">ONBOARDING</text>
+<rect x="237" y="132" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="247" y="142" width="130" height="36" rx="8" fill="url(#g1)"/>
+<rect x="247" y="188" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="247" y="199" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="247" y="210" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="237" y="245" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Editorial Newslett…</text>
+<text x="237" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">NEWSLETTER</text>
+<rect x="401" y="132" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="411" y="142" width="130" height="36" rx="8" fill="url(#g2)"/>
+<rect x="411" y="188" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="411" y="199" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="411" y="210" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="401" y="245" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Product Launch</text>
+<text x="401" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">MARKETING</text>
+<rect x="565" y="132" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="575" y="142" width="130" height="36" rx="8" fill="url(#g3)"/>
+<rect x="575" y="188" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="575" y="199" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="575" y="210" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="565" y="245" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Event Invitation</text>
+<text x="565" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">EVENTS</text>
+<rect x="729" y="132" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="739" y="142" width="130" height="36" rx="8" fill="url(#g4)"/>
+<rect x="739" y="188" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="739" y="199" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="739" y="210" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="729" y="245" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Order Confirmation</text>
+<text x="729" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">TRANSACTIONAL</text>
+<rect x="893" y="132" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="903" y="142" width="130" height="36" rx="8" fill="url(#g5)"/>
+<rect x="903" y="188" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="903" y="199" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="903" y="210" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="893" y="245" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Password Reset</text>
+<text x="893" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">SECURITY</text>
+<rect x="1057" y="132" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="1067" y="142" width="130" height="36" rx="8" fill="url(#g6)"/>
+<rect x="1067" y="188" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="1067" y="199" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="1067" y="210" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="1057" y="245" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Seasonal Sale</text>
+<text x="1057" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">MARKETING</text>
+<rect x="73" y="274" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="83" y="284" width="130" height="36" rx="8" fill="url(#g7)"/>
+<rect x="83" y="330" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="83" y="341" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="83" y="352" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="73" y="387" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Feedback Request</text>
+<text x="73" y="401" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">ENGAGEMENT</text>
+<rect x="237" y="274" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="247" y="284" width="130" height="36" rx="8" fill="url(#g8)"/>
+<rect x="247" y="330" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="247" y="341" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="247" y="352" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="237" y="387" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Meeting Follow-up</text>
+<text x="237" y="401" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">BUSINESS</text>
+<rect x="401" y="274" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="411" y="284" width="130" height="36" rx="8" fill="url(#g9)"/>
+<rect x="411" y="330" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="411" y="341" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="411" y="352" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="401" y="387" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Job Offer</text>
+<text x="401" y="401" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">HR</text>
+<rect x="565" y="274" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="575" y="284" width="130" height="36" rx="8" fill="url(#g10)"/>
+<rect x="575" y="330" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="575" y="341" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="575" y="352" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="565" y="387" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Birthday Card</text>
+<text x="565" y="401" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">PERSONAL</text>
+<rect x="729" y="274" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="739" y="284" width="130" height="36" rx="8" fill="url(#g11)"/>
+<rect x="739" y="330" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="739" y="341" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="739" y="352" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="729" y="387" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Invoice</text>
+<text x="729" y="401" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">BILLING</text>
+<rect x="893" y="274" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="903" y="284" width="130" height="36" rx="8" fill="url(#g12)"/>
+<rect x="903" y="330" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="903" y="341" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="903" y="352" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="893" y="387" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Personal Letter</text>
+<text x="893" y="401" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">PERSONAL</text>
+<rect x="1057" y="274" width="150" height="96" rx="13" fill="#ffffff" stroke="#e4e0dd"/>
+<rect x="1067" y="284" width="130" height="36" rx="8" fill="url(#g13)"/>
+<rect x="1067" y="330" width="120" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="1067" y="341" width="94" height="5" rx="2.5" fill="#e9e5e1"/>
+<rect x="1067" y="352" width="110" height="5" rx="2.5" fill="#e9e5e1"/>
+<text x="1057" y="387" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#4e4d4d">Webinar Reminder</text>
+<text x="1057" y="401" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#797776">EVENTS</text>
+</g><rect x=".5" y=".5" width="1279" height="415" rx="28" fill="none" stroke="#cecac8"/></svg>

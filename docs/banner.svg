@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="Postcraft Plum - compose email that reads like it was typeset">
+<defs>
+<radialGradient id="wA" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff9473" stop-opacity=".55"/><stop offset="60%" stop-color="#cfdaf5" stop-opacity=".3"/><stop offset="100%" stop-color="#ff9473" stop-opacity="0"/></radialGradient>
+<radialGradient id="wB" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#a7fccd" stop-opacity=".6"/><stop offset="60%" stop-color="#cfdaf5" stop-opacity=".28"/><stop offset="100%" stop-color="#a7fccd" stop-opacity="0"/></radialGradient>
+<linearGradient id="lt" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff9473"/><stop offset="50%" stop-color="#cfdaf5"/><stop offset="100%" stop-color="#a7fccd"/></linearGradient>
+<clipPath id="card"><rect width="1280" height="420" rx="28"/></clipPath>
+</defs>
+<g clip-path="url(#card)">
+<rect width="1280" height="420" fill="#f6f3f1"/>
+<circle cx="1180" cy="40" r="300" fill="url(#wA)"/>
+<circle cx="120" cy="420" r="260" fill="url(#wB)"/>
+<circle cx="85.0" cy="68" r="13.0" fill="#242424"/><circle cx="85.0" cy="68" r="4.9" fill="#f6f3f1"/><text x="109" y="77" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" fill="#242424" letter-spacing="-1">postcraft plum</text>
+<text x="72" y="186" font-family="Georgia,'Times New Roman',serif" font-size="54" fill="#242424" letter-spacing="-1.5">Compose email that reads</text>
+<text x="72" y="246" font-family="Georgia,'Times New Roman',serif" font-size="54" font-style="italic" fill="#242424" letter-spacing="-1.5">like it was typeset.</text>
+<text x="72" y="296" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" fill="#4e4d4d">14 hand-set templates  ·  live HTML editor  ·  sends from your own SMTP inbox</text>
+<rect x="72" y="326" width="111" height="30" rx="15" fill="none" stroke="#cecac8"/><text x="127" y="346" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#4e4d4d" text-anchor="middle">Next.js 15</text>
+<rect x="191.6" y="326" width="94" height="30" rx="15" fill="none" stroke="#cecac8"/><text x="239" y="346" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#4e4d4d" text-anchor="middle">React 19</text>
+<rect x="295.08" y="326" width="62" height="30" rx="15" fill="none" stroke="#cecac8"/><text x="326" y="346" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#4e4d4d" text-anchor="middle">GSAP</text>
+<rect x="366.32" y="326" width="94" height="30" rx="15" fill="none" stroke="#cecac8"/><text x="414" y="346" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#4e4d4d" text-anchor="middle">Three.js</text>
+<rect x="469.8" y="326" width="70" height="30" rx="15" fill="none" stroke="#cecac8"/><text x="505" y="346" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#4e4d4d" text-anchor="middle">Lenis</text>
+<g transform="translate(0,6)">
+<ellipse cx="1040" cy="352" rx="190" ry="26" fill="#242424" opacity=".08"/>
+<rect x="890" y="150" width="300" height="195" rx="10" fill="#ece5df" stroke="#cecac8"/>
+<rect x="917" y="92" width="246" height="156" rx="10" fill="#fffdfb" stroke="#e4e0dd"/>
+<rect x="931" y="106" width="52" height="128" rx="8" fill="url(#lt)"/>
+<text x="997" y="126" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="8" fill="#797776">POSTCRAFT PLUM</text>
+<text x="997" y="153" font-family="Georgia,'Times New Roman',serif" font-size="20" fill="#242424">Hello, Prajwal.</text>
+<rect x="997" y="168" width="150" height="5" rx="2.5" fill="#e8e3df"/>
+<rect x="997" y="181" width="128" height="5" rx="2.5" fill="#e8e3df"/>
+<rect x="997" y="194" width="140" height="5" rx="2.5" fill="#e8e3df"/>
+<rect x="997" y="212" width="86" height="22" rx="11" fill="#2b59d1"/>
+<text x="1040" y="227" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="8" fill="#fff" text-anchor="middle">READ MORE</text>
+<path d="M890 345 L1190 345 L1190 172 L1040 268 L890 172 Z" fill="#f1ebe6" stroke="#cecac8" stroke-linejoin="round"/>
+<circle cx="1040" cy="300" r="17" fill="#ff9473" stroke="#f0b9a6"/>
+</g>
+<circle cx="846" cy="112" r="25" fill="#ff9473" opacity=".9"/>
+<circle cx="1222" cy="128" r="17" fill="#cfdaf5" opacity=".9"/>
+<circle cx="1228" cy="300" r="21" fill="#a7fccd" opacity=".9"/>
+<circle cx="858" cy="316" r="14" fill="#ecda98" opacity=".9"/>
+</g>
+<rect x=".5" y=".5" width="1279" height="419" rx="28" fill="none" stroke="#cecac8"/>
+</svg>

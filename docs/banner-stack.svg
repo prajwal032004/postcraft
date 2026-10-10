@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-label="Postcraft Plum by the numbers, and the stack it is built on">
+<defs>
+<radialGradient id="w1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#cfdaf5" stop-opacity=".5"/><stop offset="100%" stop-color="#cfdaf5" stop-opacity="0"/></radialGradient>
+<clipPath id="c2"><rect width="1280" height="300" rx="28"/></clipPath></defs>
+<g clip-path="url(#c2)"><rect width="1280" height="300" fill="#f6f3f1"/>
+<circle cx="1100" cy="300" r="240" fill="url(#w1)"/>
+<text x="72" y="128" font-family="Georgia,'Times New Roman',serif" font-size="64" fill="#242424" letter-spacing="-2">14</text>
+<text x="72" y="158" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#242424">TEMPLATES</text>
+<text x="72" y="180" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#797776">hand-set, inbox-tested</text>
+<line x1="334" y1="56" x2="334" y2="196" stroke="#cecac8"/>
+<text x="356" y="128" font-family="Georgia,'Times New Roman',serif" font-size="64" fill="#242424" letter-spacing="-2">50</text>
+<text x="356" y="158" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#242424">RECIPIENTS</text>
+<text x="356" y="180" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#797776">per send, To / CC / BCC</text>
+<line x1="618" y1="56" x2="618" y2="196" stroke="#cecac8"/>
+<text x="640" y="128" font-family="Georgia,'Times New Roman',serif" font-size="64" fill="#242424" letter-spacing="-2">3 MB</text>
+<text x="640" y="158" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#242424">ATTACHMENTS</text>
+<text x="640" y="180" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#797776">straight into the message</text>
+<line x1="902" y1="56" x2="902" y2="196" stroke="#cecac8"/>
+<text x="924" y="128" font-family="Georgia,'Times New Roman',serif" font-size="64" fill="#242424" letter-spacing="-2">0</text>
+<text x="924" y="158" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#242424">STORED SECRETS</text>
+<text x="924" y="180" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#797776">your password never lands on disk</text>
+<line x1="72" y1="226" x2="1208" y2="226" stroke="#cecac8"/>
+<text x="72" y="262" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#797776">BUILT WITH</text>
+<rect x="176" y="241" width="98" height="28" rx="14" fill="none" stroke="#cecac8"/>
+<text x="225" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#4e4d4d" text-anchor="middle">Next.js 15</text>
+<rect x="283" y="241" width="84" height="28" rx="14" fill="none" stroke="#cecac8"/>
+<text x="325" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#4e4d4d" text-anchor="middle">React 19</text>
+<rect x="376" y="241" width="98" height="28" rx="14" fill="none" stroke="#cecac8"/>
+<text x="425" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#4e4d4d" text-anchor="middle">TypeScript</text>
+<rect x="483" y="241" width="55" height="28" rx="14" fill="none" stroke="#cecac8"/>
+<text x="510" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#4e4d4d" text-anchor="middle">GSAP</text>
+<rect x="546" y="241" width="84" height="28" rx="14" fill="none" stroke="#cecac8"/>
+<text x="588" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#4e4d4d" text-anchor="middle">Three.js</text>
+<rect x="639" y="241" width="62" height="28" rx="14" fill="none" stroke="#cecac8"/>
+<text x="670" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#4e4d4d" text-anchor="middle">Lenis</text>
+<rect x="710" y="241" width="98" height="28" rx="14" fill="none" stroke="#cecac8"/>
+<text x="759" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#4e4d4d" text-anchor="middle">Nodemailer</text>
+</g><rect x=".5" y=".5" width="1279" height="299" rx="28" fill="none" stroke="#cecac8"/></svg>
