@@ -3,6 +3,7 @@ import Landing from "@/components/landing/Landing";
 import { FAQ, faqAnswerText } from "@/lib/faq";
 import { SITE, absoluteUrl } from "@/lib/site";
 import { TEMPLATES } from "@/lib/templates";
+import { VIDEO } from "@/lib/video";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -54,6 +55,24 @@ function jsonLd() {
           "Attachments up to 3 MB and up to 50 recipients across To, CC and BCC",
           "Credentials are never stored on the server",
         ],
+      },
+      {
+        "@type": "VideoObject",
+        "@id": absoluteUrl("/#setup-video"),
+        name: "How to create a Gmail app password",
+        description:
+          "A 25-second screen recording showing how to turn on 2-Step Verification, open the Google app passwords page, and generate the 16-character code needed to send mail through Gmail SMTP.",
+        thumbnailUrl: [absoluteUrl(VIDEO.poster)],
+        contentUrl: absoluteUrl(VIDEO.src),
+        embedUrl: absoluteUrl("/#setup"),
+        // ISO 8601; the clip is silent, so the on-page steps carry the detail.
+        duration: `PT${VIDEO.seconds}S`,
+        width: VIDEO.width,
+        height: VIDEO.height,
+        uploadDate: "2026-10-10T00:00:00+00:00",
+        isFamilyFriendly: true,
+        inLanguage: "en",
+        publisher: { "@id": absoluteUrl("/#person") },
       },
       {
         "@type": "FAQPage",

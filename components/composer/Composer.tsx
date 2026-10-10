@@ -6,6 +6,7 @@ import gsap from "gsap";
 import CodeEditor from "./CodeEditor";
 import TemplateThumb from "@/components/TemplateThumb";
 import { SITE } from "@/lib/site";
+import VideoShowcase from "@/components/VideoShowcase";
 import {
   FONT_OPTIONS,
   STARTER_HTML,
@@ -148,6 +149,7 @@ export default function Composer() {
   const [creds, setCreds] = useState<Creds>(emptyCreds);
   const [remember, setRemember] = useState(false);
   const [showPass, setShowPass] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
   const [showCc, setShowCc] = useState(false);
   const [attachments, setAttachments] = useState<Attach[]>([]);
   const [leftTab, setLeftTab] = useState<LeftTab>("library");
@@ -698,6 +700,14 @@ export default function Composer() {
                         Get one →
                       </a>
                     )}
+                    {creds.provider === "gmail" && (
+                      <>
+                        {" · "}
+                        <button type="button" className="field-link" onClick={() => setShowHelp(true)}>
+                          Watch 25s setup
+                        </button>
+                      </>
+                    )}
                   </span>
                 )}
               </label>
@@ -836,6 +846,29 @@ export default function Composer() {
           </div>
         </aside>
       </div>
+
+      {showHelp && (
+        <div className="modal" role="dialog" aria-modal="true" aria-label="Creating a Gmail app password">
+          <button className="modal-scrim" aria-label="Close" onClick={() => setShowHelp(false)} />
+          <div className="modal-card">
+            <div className="modal-head">
+              <div>
+                <small className="muted">Gmail · 25 seconds</small>
+                <h2 className="h-sub">Create an app password</h2>
+              </div>
+              <button className="modal-x" onClick={() => setShowHelp(false)} aria-label="Close">
+                ×
+              </button>
+            </div>
+            <VideoShowcase />
+            <ol className="modal-steps">
+              <li>Turn on 2-Step Verification in your Google Account.</li>
+              <li>Open myaccount.google.com/apppasswords and name it “{SITE.name}”.</li>
+              <li>Paste the 16-character code into the App password field.</li>
+            </ol>
+          </div>
+        </div>
+      )}
 
       <div className="toasts" aria-live="polite">
         {toasts.map((t) => (

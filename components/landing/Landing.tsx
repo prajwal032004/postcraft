@@ -12,6 +12,7 @@ import Nav from "./Nav";
 import Preloader from "./Preloader";
 import Cursor from "./Cursor";
 import TemplateCard from "./TemplateCard";
+import VideoShowcase from "@/components/VideoShowcase";
 
 const HeroScene = dynamic(() => import("./HeroScene"), { ssr: false });
 const CtaScene = dynamic(() => import("./CtaScene"), { ssr: false });
@@ -58,6 +59,12 @@ const FEATURES: [string, string, string][] = [
     "App passwords are used for one SMTP session and never stored on the server. Remembering them locally is opt-in.",
   ],
   ["⎙", "Attachments & BCC", "Attach files up to 3 MB and send to as many as 50 recipients across To, CC and BCC."],
+];
+
+const SETUP_STEPS: [string, string][] = [
+  ["Turn on 2-Step Verification", "Google only offers app passwords once 2-Step Verification is active on your account."],
+  ["Open the app passwords page", "Go to myaccount.google.com/apppasswords and name the password “Postcraft Plum”."],
+  ["Paste the 16-character code", "Drop it into the App password field in the composer. Spaces are stripped for you."],
 ];
 
 const STATEMENT =
@@ -668,6 +675,45 @@ export default function Landing() {
                   <p>{body}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ---------------- App password walkthrough ---------------- */}
+        <section className="section setup" id="setup" style={{ paddingTop: 0 }}>
+          <div className="container">
+            <div className="section-head">
+              <div>
+                <span className="eyebrow">Setup · 25 seconds</span>
+                <h2 className="h-lg" style={{ marginTop: 20 }} data-reveal>
+                  Get your Gmail app password <span className="italic">in under a minute.</span>
+                </h2>
+              </div>
+              <p className="lead" data-reveal>
+                Sending from your own account needs an app password, never your real one. Here is the whole process, start to
+                finish.
+              </p>
+            </div>
+
+            <div className="setup-grid">
+              <ol className="setup-steps" data-stagger>
+                {SETUP_STEPS.map(([title, body], i) => (
+                  <li key={title}>
+                    <span className="setup-num">{String(i + 1).padStart(2, "0")}</span>
+                    <div>
+                      <h3 className="h-sub">{title}</h3>
+                      <p>{body}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+
+              <div className="setup-video" data-reveal>
+                <VideoShowcase />
+                <p className="setup-note muted">
+                  Silent screen recording · the steps on the left describe every action shown.
+                </p>
+              </div>
             </div>
           </div>
         </section>

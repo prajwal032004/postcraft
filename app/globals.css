@@ -1557,6 +1557,221 @@ html.has-cursor .page * {
 }
 
 /* =========================================================
+   App password walkthrough
+   ========================================================= */
+.setup-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 48px;
+  align-items: center;
+}
+.setup-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.setup-steps li {
+  display: flex;
+  gap: 18px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--color-ash);
+}
+.setup-steps li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.setup-num {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--color-ash);
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  color: var(--color-smoke);
+}
+.setup-steps p {
+  margin: 10px 0 0;
+  color: var(--color-graphite);
+  font-size: var(--text-body-sm);
+  line-height: 1.6;
+}
+.setup-note {
+  margin: 14px 0 0;
+  font-size: var(--text-caption);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* browser-chrome frame around the clip */
+.vid {
+  border: 1px solid var(--color-ash);
+  border-radius: 26px;
+  overflow: hidden;
+  background: var(--color-parchment);
+  box-shadow: var(--shadow-lift);
+}
+.vid-chrome {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-ash);
+}
+.vid-dots {
+  display: flex;
+  gap: 6px;
+  flex: none;
+}
+.vid-dots i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-ash);
+}
+.vid-dots i:first-child {
+  background: var(--color-coral);
+}
+.vid-dots i:nth-child(2) {
+  background: var(--color-gold);
+}
+.vid-dots i:last-child {
+  background: var(--color-mint);
+}
+.vid-url {
+  flex: 1;
+  min-width: 0;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  background: rgba(0, 0, 0, 0.04);
+  font-size: 11px;
+  color: var(--color-smoke);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.vid-time {
+  flex: none;
+  font-size: 11px;
+  color: var(--color-smoke);
+}
+.vid-stage {
+  position: relative;
+  width: 100%;
+  background: #242424;
+}
+.vid-stage video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.vid-toggle {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  transition: background 0.4s var(--ease);
+}
+.vid-toggle:hover {
+  background: rgba(36, 36, 36, 0.18);
+}
+.vid-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--color-lake-blue);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: transform 0.5s var(--ease), opacity 0.4s;
+}
+/* play triangle */
+.vid-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 17px solid #fff;
+}
+/* swap to pause bars once it is running, and fade unless hovered */
+.vid-icon.pause {
+  opacity: 0;
+  transform: scale(0.8);
+}
+.vid-toggle:hover .vid-icon.pause,
+.vid-toggle:focus-visible .vid-icon.pause {
+  opacity: 1;
+  transform: scale(1);
+}
+.vid-icon.pause::before {
+  border: 0;
+  width: 5px;
+  height: 20px;
+  background: #fff;
+  transform: translate(-150%, -50%);
+}
+.vid-icon.pause::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 20px;
+  background: #fff;
+  transform: translate(50%, -50%);
+}
+.vid-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: rgba(246, 243, 241, 0.25);
+}
+.vid-bar i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--color-mint);
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+@media (max-width: 980px) {
+  .setup-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+@media (max-width: 720px) {
+  .vid {
+    border-radius: 20px;
+  }
+  .vid-chrome {
+    padding: 10px 12px;
+  }
+  .vid-icon {
+    width: 56px;
+    height: 56px;
+  }
+  .setup-steps {
+    gap: 22px;
+  }
+  .setup-steps li {
+    padding-bottom: 22px;
+  }
+}
+
+/* =========================================================
    FAQ
    ========================================================= */
 .faq-grid {

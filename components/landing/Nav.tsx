@@ -10,7 +10,8 @@ const LINKS = [
   { href: "#how", label: "How it works", n: "01" },
   { href: "#templates", label: "Templates", n: "02" },
   { href: "#features", label: "Features", n: "03" },
-  { href: "#faq", label: "FAQ", n: "04" },
+  { href: "#setup", label: "Setup", n: "04" },
+  { href: "#faq", label: "FAQ", n: "05" },
 ];
 
 export default function Nav({ scrolled, progress }: { scrolled: boolean; progress: number }) {
